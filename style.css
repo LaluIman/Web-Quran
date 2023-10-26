@@ -1,0 +1,13 @@
+body{
+    background-color: rgb(242, 242, 242);
+}
+
+.cardSurat{
+    cursor: pointer;
+    transition: .5s;
+    border-color: black;
+    border-radius: 20px;
+}
+.cardSurat:hover{
+    background-color:#2379026b  ;   
+}
