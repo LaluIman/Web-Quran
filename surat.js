@@ -26,7 +26,8 @@ function getSurat(){
         // judul surat
         const judulSurat = document.querySelector('.judul-surat')
         const cardJudulSurat = `
-        <b>${response.nama_latin}-${response.nama}</b>
+        <div>
+        <h3>${response.nama_latin} - ${response.nama}</h3>
         <p>jumlah ayat: ${response.jumlah_ayat} <br><b>${response.arti}</b></p>
         <button class="btn btn-primary audio-button-play"> 
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-play-circle" viewBox="0 0 16 16">
@@ -40,7 +41,8 @@ function getSurat(){
                 <path d="M5 6.5A1.5 1.5 0 0 1 6.5 5h3A1.5 1.5 0 0 1 11 6.5v3A1.5 1.5 0 0 1 9.5 11h-3A1.5 1.5 0 0 1 5 9.5v-3z"/>
             </svg>
          <b>Stop</b></button>
-         <audio id="audio-tag"src="${response.audio}"></audio>`
+         <audio id="audio-tag"src="${response.audio}"></audio>
+         </div>`
          
 
 
@@ -49,12 +51,12 @@ function getSurat(){
         const surat =response.ayat;
         let isiSurat = '';
         surat.forEach(s =>{
-            isiSurat+=` <div class="card mb-4">
+            isiSurat+=` <div class="card mb-4" style="border-radius: 20px !important;">
             <div class="card-body ">
-             <p>${s.nomor}</p>
-             <h3 class="text-end">${s.ar}</h3>
-             <p>${s.tr}</p>
-             <p>${s.idn}</p>
+             <p><b>${s.nomor}</b></p>
+             <h1 class="text-end">${s.ar}</h1>
+             <p class="h6" mt-2>${s.tr}</p>
+             <p class="text-mute">${s.idn}</p>
                </div>
          </div>`;
         });
