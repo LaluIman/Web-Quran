@@ -54,8 +54,8 @@ function getSurat(){
             isiSurat+=` <div class="card mb-4" style="border-radius: 20px !important;">
             <div class="card-body ">
              <p><b>${s.nomor}</b></p>
-             <h1 class="text-end">${s.ar}</h1>
-             <p class="h6" mt-2>${s.tr}</p>
+             <h1 class="card-subtitle text-end fw-lighter">${s.ar}</h1>
+             <h4 class="mt-3 fw-light" >${s.tr}</h4>
              <p class="text-mute">${s.idn}</p>
                </div>
          </div>`;

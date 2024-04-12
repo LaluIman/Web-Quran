@@ -9,7 +9,7 @@ function getSurat(searchTerm = '') {
                   <div class="card mb-2 cardSurat">
                       <div class="card-body" onclick="location.href='surat.html?nomorsurat=${surat.nomor}'">
                           <h5 class="card-title"><b>${surat.nomor}</b> ${surat.nama_latin}</h5>
-                          <h3 class="card-subtitle mb-2 text-end h1">${surat.nama}</h3>
+                          <h1 class="card-subtitle fw-light mb-2 text-end">${surat.nama}</h1>
                           <p class="card-text text-end">${surat.arti}</p>
                       </div>
                   </div>

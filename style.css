@@ -2,6 +2,18 @@ body{
     background-color: rgb(242, 242, 242);
 }
 
+
+@import url('https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+.card-subtitle{
+    font-family: "Amiri", serif;
+}
+
+.gr{
+    color: green;
+}
+
+
 .cardSurat{
     cursor: pointer;
     transition: .5s;
